@@ -1,0 +1,8 @@
+<p>
+  categoria works!
+</p>
+
+<li *ngFor="let c of listado">
+  {{c.id}} {{c.nombre}} <input type="button" value="ver más detalles" (click)="verDetalles(c.id)"  >
+
+</li>
