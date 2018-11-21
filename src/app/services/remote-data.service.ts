@@ -19,4 +19,8 @@ export class RemoteDataService {
     return this.httpClient.get<Categoria>(this.SERVER + id);
   }
 
+  crearCategoria(cat: Categoria){
+    return this.httpClient.post<Categoria>(this.SERVER, cat);
+  }
+
 }

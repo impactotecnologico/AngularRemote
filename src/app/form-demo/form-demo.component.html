@@ -1,0 +1,11 @@
+<form (ngSubmit)="onSubmit(catForm);" #catForm="ngForm">
+
+    <input placeholder="Nombre" #nombre maxlength="80"
+                         [(ngModel)]="cat.nombre" name="nombre" required>
+
+
+    <button>Enviar</button>
+    <button type="button" (click)="limpiar(catForm)">Limpiar</button>
+
+
+</form>
